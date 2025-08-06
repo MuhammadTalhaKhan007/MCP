@@ -16,9 +16,9 @@ class ToolManager:
                 {
                     "name": t.name,
                     "description": t.description,
-                    "input_schema": t.inputSchema,
+                    "input_schema": t.inputSchema
                 }
-                for t in tool_models
+                for t in tool_models.tools
             ]
         return tools
 
@@ -28,7 +28,8 @@ class ToolManager:
     ) -> Optional[MCPClient]:
         """Finds the first client that has the specified tool."""
         for client in clients:
-            tools = await client.list_tools()
+            tools_result = await client.list_tools()
+            tools = tools_result.tools 
             tool = next((t for t in tools if t.name == tool_name), None)
             if tool:
                 return client
