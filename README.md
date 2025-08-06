@@ -1,8 +1,11 @@
 <div align="center">
-  <img src="./New Logo.jpg" alt="Anthropic Logo" height="80"/>
+  <img src="./Anthropic_logo.svg.png" alt="Anthropic Logo"
+       height="80"
+       style="margin-bottom: 16px; filter: sepia(1) saturate(10) hue-rotate(-20deg);" />
   <h1>Model Context Protocol (MCP) Playground</h1>
   <p><strong>Built with Python MCP SDK · Powered by Anthropic</strong></p>
 </div>
+
 
 ---
 
