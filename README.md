@@ -1,4 +1,4 @@
-<div align="center" style="margin-bottom: 20px;">
+<div align="center">
   <img src="./Best Logo.png"
        alt="Anthropic Logo"
        height="350"
