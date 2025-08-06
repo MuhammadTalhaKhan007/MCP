@@ -48,7 +48,6 @@ def edit_document(
 def list_docs() -> list[str]:
     return list(docs.keys())
 
-# TODO: Write a resource to return the contents of a particular doc
 @mcp.resource(
     "docs://documents/{doc_id}",
     mime_type="text/plain",
