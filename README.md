@@ -1,5 +1,5 @@
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./Anthropic_logo.svg.png"
+  <img src="./Latest Logo.webp"
        alt="Anthropic Logo"
        height="80"
        style="filter: sepia(1) saturate(300%) hue-rotate(15deg) brightness(1.1); margin-bottom: 16px;" />
