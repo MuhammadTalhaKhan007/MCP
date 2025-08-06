@@ -42,7 +42,7 @@ class Claude:
     ) -> Message:
         params = {
             "model": self.model,
-            "max_tokens": 8000,
+            "max_tokens": 3000,
             "messages": messages,
             "temperature": temperature,
             "stop_sequences": stop_sequences,
