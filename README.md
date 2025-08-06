@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="./Best Logo.png"
-       alt="Anthropic Logo"
-       height="350"
-       style="filter: sepia(1) saturate(10000%) hue-rotate(-10deg); margin-bottom: 2px;" />
+<img src="./Best Logo.png"
+     alt="Anthropic Logo"
+     height="350"
+     style="display: block; margin: 0 auto 0.5rem auto; padding: 0;" />
   <h1>Model Context Protocol (MCP)</h1>
   <p><strong>Built with Python MCP SDK · Powered by Anthropic</strong></p>
 </div>
