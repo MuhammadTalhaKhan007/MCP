@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./Best Logo.png"
+<img src="./New Logo.png"
      alt="Anthropic Logo"
      height="350"
      style="display: block; margin: 0 auto 0.5rem auto; padding: 0;" />
