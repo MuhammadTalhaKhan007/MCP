@@ -15,5 +15,5 @@ uv sync
 Run the MCP client:
 
 ```bash
-uv run client.py
+uv run client.py 
 ```
