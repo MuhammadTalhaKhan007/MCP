@@ -9,9 +9,13 @@ from mcp.types import (
     TextContent,
     SamplingMessage,
 )
+from dotenv import load_dotenv
+import os
 
-anthropic_client = AsyncAnthropic()
-model = "claude-3-7-sonnet-20250219"
+
+load_dotenv(override=True)
+anthropic_client = AsyncAnthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+model = "claude-3-7-sonnet-latest"
 
 server_params = StdioServerParameters(
     command="uv",
@@ -69,7 +73,17 @@ async def run():
 
             result = await session.call_tool(
                 name="summarize",
-                arguments={"text_to_summarize": "lots of text"},
+                arguments = {
+                    "text_to_summarize": """
+                Artificial Intelligence (AI) is transforming the way businesses operate across the globe. 
+                From automating routine tasks to enabling predictive analytics, AI enhances efficiency and decision-making. 
+                Machine Learning (ML), a subset of AI, allows systems to learn from data patterns and improve over time. 
+                Natural Language Processing (NLP) powers applications like chatbots, virtual assistants, and sentiment analysis. 
+                Despite its benefits, AI adoption also raises ethical concerns, such as bias in algorithms, job displacement, 
+                and data privacy issues. Organizations need to balance innovation with responsible AI practices to maximize 
+                value while minimizing risks.
+                """
+                }
             )
             print(result.content)
 

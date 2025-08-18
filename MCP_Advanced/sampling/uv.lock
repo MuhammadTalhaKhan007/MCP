@@ -443,6 +443,7 @@ dependencies = [
     { name = "aioconsole" },
     { name = "anthropic" },
     { name = "mcp", extra = ["cli"] },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -450,6 +451,7 @@ requires-dist = [
     { name = "aioconsole", specifier = ">=0.8.1" },
     { name = "anthropic", specifier = ">=0.53.0" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.9.3" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
 
 [[package]]
