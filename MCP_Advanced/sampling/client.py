@@ -11,7 +11,7 @@ from mcp.types import (
 )
 
 anthropic_client = AsyncAnthropic()
-model = "claude-sonnet-4-0"
+model = "claude-3-7-sonnet-20250219"
 
 server_params = StdioServerParameters(
     command="uv",
@@ -63,7 +63,7 @@ async def sampling_callback(
 async def run():
     async with stdio_client(server_params) as (read, write):
         async with ClientSession(
-            read, write, sampling_callback=sampling_callback
+            read, write, sampling_callback=sampling_callback # Callback response to MCP server
         ) as session:
             await session.initialize()
 
