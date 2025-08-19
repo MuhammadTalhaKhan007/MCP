@@ -1,1 +1,5 @@
+MCP Specification Repository:
 https://github.com/modelcontextprotocol/modelcontextprotocol
+
+All Available Message Types:
+https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/draft/schema.ts
