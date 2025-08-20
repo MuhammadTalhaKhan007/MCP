@@ -1086,6 +1086,8 @@
 
       let sseReader = null;
       let sseAbortController = null;
+
+      // Start GET SSE Connection
       async function startSSE() {
         if (sseAbortController) {
           sseAbortController.abort();
