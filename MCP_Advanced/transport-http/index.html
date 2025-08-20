@@ -733,7 +733,7 @@
     <script>
       let sessionId = null;
       let sseSource = null;
-      const serverUrl = "http://localhost:8000/mcp/";
+      const serverUrl = "http://127.0.0.1:8000/mcp";
 
       // Update session ID in all cards
       function updateSessionId(id) {
@@ -889,6 +889,7 @@
 
           // Get session ID from response headers
           const responseSessionId = response.headers.get("mcp-session-id");
+          console.log(`The response is SSE ${response}`);
           updateSessionId(responseSessionId);
           // if (responseSessionId) {
 
@@ -897,6 +898,7 @@
           // Handle response based on content type
           const contentType = response.headers.get("content-type");
           if (contentType && contentType.includes("text/event-stream")) {
+            console.log(`The response is SSE ${response}`);
             displayResponse("init", response.headers, "", true);
             handleSSEResponse("init", response);
           } else {
